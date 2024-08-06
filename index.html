@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/><!-- CSS -->
+    <title>API</title>
+</head>
+
+<body>
+    <main>
+        <aside>
+            <div class="pokListContainer">
+                <h3 id="pokListQ"></h3>
+                <h2>pokemons</h2>
+            </div>
+            <div id="pokList" class="pokList"></div>
+            <input type="text" id="input" class="input" placeholder="Make Pokemon name">
+            <div id="btnInput" class="btnInput">Search</div>
+        </aside>
+
+        <article>
+            <section class="poksContainer">
+                <div class="userPokContainer">
+                    <h2 id="userPokId">id</h2>
+                    <div id="userPokName">name</div>
+                    <img src="img/1.png" alt="img" id="userPokImg">
+                        <p style="color: red;" id="userPokCharHp">Hp:</p>
+                        <p style="color: rgb(246, 161, 76);" id="userPokCharAtk">Atk:</p>
+                        <p style="color: rgb(174, 174, 174);" id="userPokCharDef">Def:</p>
+                        <p style="color: rgb(69, 187, 250);" id="userPokCharSpd">Spd:</p>
+                </div>
+
+                    <div class="vs">vs</div>
+
+                <div id="aiPokContainer" class="aiPokContainer">
+                    <h2 id="aiPokId">id</h2>
+                    <div id="aiPokName">name</div>
+                    <img src="img/1.png" alt="img" id="aiPokImg">
+                    <p style="color: red;" id="aiPokCharHp">Hp:</p>
+                    <p style="color: rgb(246, 161, 76);" id="aiPokCharAtk">Atk:</p>
+                    <p style="color: rgb(174, 174, 174);" id="aiPokCharDef">Def:</p>
+                    <p style="color: rgb(69, 187, 250);" id="aiPokCharSpd">Spd:</p>
+                </div>
+            </section>
+            <section class="gameContainer">
+                <div id="userHealthbarContainer" class="userHealthbarContainer">
+                    <div id="userHealthbar" class="userHealthbar"></div>
+                    <p id="userHealthText" class="userHealthText"></p>
+                </div>
+                <div id="btnFight" class="btnFight">Fight</div>
+                <div id="aiHealthbarContainer" class="aiHealthbarContainer">
+                    <div id="aiHealthbar" class="aiHealthbar"></div>
+                    <p id="aiHealthText" class="aiHealthText"></p>
+                </div>
+            </section>
+        </article>
+    </main>
+    <script src="script.js"></script><!-- JS -->
+</body>
+
+</html>

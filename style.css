@@ -1,0 +1,267 @@
+/* reset */
+* {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    background-color: bisque;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(56, 56, 56);
+    padding: 30px;
+}
+
+.pokListContainer {
+    width: 240px;
+    height: 60px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+
+    background-color: rgb(42, 42, 42);
+}
+.pokListContainer h3 {
+    position: relative;
+    top: 5px;
+    right: -5px;
+
+    font-size: 18px;
+    color: gray;
+}
+.pokListContainer h2 {
+    position: relative;
+    top: 15px;
+    right: -35px;
+
+    font-size: 22px;
+    color: rgb(138, 138, 138);
+}
+
+.pokList {
+    width: 240px;
+    height: 330px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    /* контейнер */
+    overflow-x: hidden;
+    overflow-y: scroll;
+    direction: rtl;/* скрол с лева */
+}
+/* скролл */
+.pokList::-webkit-scrollbar {
+    width: 12px;/* ширина скрола */
+}
+.pokList::-webkit-scrollbar-thumb {/* цвет скрола*/
+    background: rgb(110, 180, 210);
+}
+.pokList::-webkit-scrollbar-track {/* цвет пустого скрола*/
+    background: rgb(42, 42, 42);
+}
+.pokList::-webkit-scrollbar-thumb:hover {/* цвет ховера скрола*/
+    background: rgb(14, 14, 14);
+}
+
+.pokListItem {
+    padding: 5px 0px 5px 5px;
+    font-size: 18px;
+
+    /* контейнер */
+    direction: ltr;/* текст с права от скрола */
+}
+.pokListItem:hover {
+    cursor: pointer;
+    box-shadow: 6px 0px 10px rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(82, 145, 253);
+}
+.pokListItemActive {
+    padding: 12px 0px 12px 5px;
+    box-shadow: 6px 0px 10px rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(82, 145, 253);
+    color: white;
+}
+.input {
+    width: 240px;
+    height: 50px;
+    border-radius: 20px;
+    border: solid 4px rgb(48, 48, 48);
+    border-color: rgb(233, 233, 233);
+    background-color: rgb(189, 189, 189);
+    padding-left: 10px;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    box-shadow: 4px 4px 10px rgb(106, 106, 106) inset;
+}
+.input:focus {
+    background-color: rgb(195, 225, 243);
+    border-color: rgb(110, 180, 210);
+    outline: none;
+}
+
+.btnInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 240px;
+    height: 50px;
+    border-radius: 20px;
+    border: solid 3px rgb(48, 48, 48);
+    border-color: rgb(51, 219, 219);
+    background-color: rgb(50, 130, 170);
+    font-size: 22px;
+    color: rgb(210, 210, 210);
+
+    margin-top: 20px;
+    box-shadow: 4px 4px 10px rgb(32, 32, 32);
+}
+.btnInput:hover {
+    cursor: pointer;
+    background-color: rgb(100, 177, 215);
+}
+.btnInput:active {
+    position: relative;
+    top: 3px;
+    left: 3px;
+    color: rgb(251, 251, 251);
+    box-shadow: none;
+    border-color: rgb(192, 255, 255);
+}
+
+
+article {
+    width: 600px;
+}
+.poksContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userPokContainer, .aiPokContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+
+    width: 40%;
+    height: 440px;
+    background-color: rgb(56, 60, 55);
+}
+.userPokContainer h2, .aiPokContainer h2 { 
+    font-size: 18px;
+    color: gray;
+    padding: 4px 0px 4px 4px;
+    position: absolute;
+}
+.userPokContainer div, .aiPokContainer div  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 70px;
+
+    background-color: rgb(42, 42, 42);  
+    text-align: center;
+    font-size: 26px;
+    color: gray;
+}
+.userPokContainer img, .aiPokContainer img  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    background-color: rgb(77, 77, 77);
+}
+.userPokContainer p, .aiPokContainer p {
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px dashed black;
+
+    font-size: 18px;
+    font-weight: lighter;
+    color: gray;
+    padding: 5px 0px 5px 10px;
+}
+.vs {
+    width: 20%;
+    text-align: center;
+    font-size: 60px;
+    color: gray;
+
+    position: relative;
+    top: -40px;
+}
+
+
+.gameContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin-top: 30px;
+}
+.userHealthbarContainer, .aiHealthbarContainer {
+    width: 200px;
+    height: 100%;
+    border: 4px solid #1a1919;
+    background-color: #ddd;
+}
+.userHealthbar, .aiHealthbar {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    transition: width 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userHealthText, .aiHealthText {
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(43, 43, 43);
+    position: relative;
+    right: -10px;
+    top: -44px;
+}
+
+.btnFight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    border: solid 3px rgb(48, 48, 48);
+    border-color: rgb(254, 112, 112);
+    background-color: rgb(242, 52, 52);
+    font-size: 22px;
+    color: rgb(210, 210, 210);
+
+}
+.btnFight:hover {
+    cursor: pointer;
+    background-color: rgb(209, 77, 77);
+}
+.btnFight:active {
+    position: relative;
+    top: 3px;
+    left: 3px;
+    color: rgb(251, 251, 251);
+    box-shadow: none;
+    border-color: rgb(233, 164, 164);
+}
