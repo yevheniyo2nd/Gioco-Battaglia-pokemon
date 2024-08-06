@@ -1,14 +1,16 @@
 # Gioco Battaglia pokemon
 
 ## 📝 Descrizione
-Questo progetto rappresenta una lista delle cose da fare che salva tutto il contenuto inserito su un server locale.
-<br>Progetto permette di aggiungere, togliere e completare le cose inserite.</br>
+Questo progetto prende API esterne dal sito **pokeapi.co** ovvero Le immagini e le caratteristiche di pokemon e rappresenta un gioco dove diversi pokemon combattono uno contro altro paragonando cosi chi e il più forte.
+<br>Utente può scegliere un pokemon della lista a suo piacere, o inserire il nome del pokemon sulla barra di ricerca per trovare il pokemon interessato.</br> 
+Una volta scelto il suo pokemon utente può premere pulsante "Fight" attaccando cosi il pokemon dell avversario e ricevendo il danno dal esso.
+Il pokemon che rimane senza la vita per primo perde.
 
 ## 🔧 Tecnologie utilizzate
 - HTML
 - CSS
 - JavaScript
-    - *Html, CSS, JavaScript + Api*
+    - *Api*
         - *addEventListener, querySelectorAll, fetch, json, parseInt, Math.floor, Math.random, setTimeout, createElement, add, includes, append, remove, scrollTo, forEach*
   
 ## 📥 Istruzioni per l'installazione
@@ -35,9 +37,11 @@ Questo progetto rappresenta una lista delle cose da fare che salva tutto il cont
 <br>✅ Ottimo! Il progetto è stato copiato.</br>
 
 ## 🖱️ Istruzioni per l'uso
-Tutto il progetto è manipolabile con il Mouse (LMB - Left mouse button) e la tastiera.
+Tutto il progetto è manipolabile con il Mouse (LMB - Left mouse button).
 
-1. Scrivere la cosa da fare all interno della finestrina in alto
-2. Premere pulsante Add per aggiungere il contenuto
-3. Premere (LMB - Left mouse button) sul contenuto per complottarlo
-4. Premere (LMB - Left mouse button) sul X per eliminare il contenuto
+1. Selezionare il pokemon dalla lista (barra a destra) o inserire il suo nome nella barra di ricerca e premere "Search"
+2. Premere pulsante "Fight" per eseguire attacco e ricevere il danno dall pokemon nemico
+
+La quantità iniziale di pokemon è di 100 ma può essere aumentata fino a un numero di 1025 pokemons. 
+  - aprire il file `script.js` 
+  - In riga 5 `const maxPok = 100;` cambiare la quantità della variabile `maxPok` mettendo quella interessata (max 1025).
