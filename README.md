@@ -1,8 +1,8 @@
 # Gioco Battaglia pokemon
 
 ## 📝 Descrizione
-Questo progetto prende API esterne dal sito **pokeapi.co** ovvero Le immagini e le caratteristiche di pokemon e rappresenta un gioco dove diversi pokemon combattono uno contro altro paragonando cosi chi e il più forte.
-<br>Utente può scegliere un pokemon della lista a suo piacere, o inserire il nome del pokemon sulla barra di ricerca per trovare il pokemon interessato.</br> 
+Questo progetto prende API esterne dal sito **pokeapi.co** ovvero Le immagini e le caratteristiche di pokemon e rappresenta un gioco dove diversi pokemon combattono uno contro altro paragonando cosi chi è il più forte.
+<br>Utente può scegliere un pokemon della lista a suo piacere o inserire il nome del pokemon sulla barra di ricerca per trovare il pokemon interessato.</br> 
 Una volta scelto il suo pokemon utente può premere pulsante "Fight" attaccando cosi il pokemon dell avversario e ricevendo il danno dal esso.
 Il pokemon che rimane senza la vita per primo perde.
 
