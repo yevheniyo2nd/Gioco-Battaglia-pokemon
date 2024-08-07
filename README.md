@@ -37,11 +37,11 @@ Il pokemon che rimane senza la vita per primo perde.
 <br>✅ Ottimo! Il progetto è stato copiato.</br>
 
 ## 🖱️ Istruzioni per l'uso
-Tutto il progetto è manipolabile con il Mouse (LMB - Left mouse button).
+Tutto il progetto è manipolabile con il Mouse `LMB - Left mouse button`.
 
-1. Selezionare il pokemon dalla lista (barra a destra) o inserire il suo nome nella barra di ricerca e premere "Search"
-2. Premere pulsante "Fight" per eseguire attacco e ricevere il danno dall pokemon nemico
+1. Selezionare il pokemon dalla lista `barra a destra` o inserire il suo nome nella `barra di ricerca` e premere `Search`.
+2. Premere pulsante `Fight` per eseguire attacco e ricevere il danno dall pokemon nemico.
 
 La quantità iniziale di pokemon è di 100 ma può essere aumentata fino a un numero di 1025 pokemons. 
-  - aprire il file `script.js` 
+  - aprire il file `script.js`.
   - In riga 5 `const maxPok = 100;` cambiare la quantità della variabile `maxPok` mettendo quella interessata (max 1025).
